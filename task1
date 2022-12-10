@@ -43,7 +43,7 @@ public class Number3 {
                     cnt += 1;
                     if (output.equals(random_word)){
                         cnt = random_word.length();
-                        System.out.println("Внутри вашего слова содержится то, что нужно угадать.Вам повезло!");
+                        System.out.println("Внутри вашего слова содержится то, что нужно угадать");
                         break OUTERMOST;
                     }
                     if (cnt >= word.length()) break;
@@ -56,6 +56,6 @@ public class Number3 {
             word = inp.nextLine();
         }while (cnt != random_word.length());
         
-        System.out.printf("Вы угадали слово - %s, поздравляю!", output);
+        System.out.printf("Вы угадали слово - %s", output);
     }
 }
